@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание объекта</title>
+</head>
+<body>
+
+<div class="row">
+
+    <div class="col-md-8 order-md-1">
+      <a href="/cdu "  class="btn btn-info btn-lg"><-- Назад </a>
+      <h4 class="mb-3">Ввод данных</h4>
+      <form class="needs-validation"  method="post">
+        {% csrf_token %}
+        {{form.name}}
+        <hr class="mb-4">
+        {{form.descrip}}
+        <hr class="mb-4">
+          <p>Адрес</p>
+           {{form.adress}}
+        <hr class="mb-4">
+          <p>Количество комнат</p>
+        {{form.kol_rooms}}
+        <hr class="mb-4">
+          <p>Цена</p>
+           {{form.price}}
+        <hr class="mb-4">
+           <p>Комиссия</p>
+           {{form.commission}}
+        <hr class="mb-4">
+          <p>Площадь</p>
+          {{form.square}}
+        <hr class="mb-4">
+           <p>Площадь территории</p>
+          {{form.square_of_area}}
+        <hr class="mb-4">
+              <p>Цель</p>
+          {{form.aim}}
+        <hr class="mb-4">
+
+        <button type="submit" class="btn success"> Добавить</button>
+      </form>
+    </div>
+</div>
+
+
+</body>
+</html>
